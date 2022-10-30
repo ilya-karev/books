@@ -1,0 +1,25 @@
+.max-height-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+          line-clamp: 4; 
+  -webkit-box-orient: vertical;
+}
+
+.text-overflow > div {
+  overflow: hidden;
+}
+.text-overflow span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.BooksListItem:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+.BooksListItem:hover img {
+  opacity: .75;
+}

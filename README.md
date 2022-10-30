@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# React Frontend assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Book discovery application 📚
 
-## Available Scripts
+**To start project**
 
-In the project directory, you can run:
+- Clone repository
+- Install dependencies (npm i)
+- Run the application (npm start)
 
-### `npm start`
+## Assignment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Write a React application for book discovery using an API that we provide**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- User must be able to discover and search for books
+- UI is secondary, don’t waste too much time trying to create a perfect interface, focus on business logic and performance.
 
-### `npm test`
+## **Technical requirements:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Books screen - Where books from the api are displayed. 
+The screen should have a search bar at the top.
+While results are loading, the user should see a loading indicator
+2. Individual book screen. When the user taps on a book, he gets taken to an individual book screen where he can read the full synopsis of the book
+3. We use TypeScript in our projects, so it is required to use it in the assignment
 
-### `npm run build`
+## **Nice to have:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clean and simple code. Write as if somebody will look into your code (because somebody will)
+- Performance optimisations (imagine that you have thousands of books in the list)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Evaluation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We look for:
 
-### `npm run eject`
+1. The way you structure your test code and how you write it
+2. Your train of thought
+3. Your decision-making
+4. Attention to details
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Submission:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Provide a public GitHub repo with the project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Deadline
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+It has to be submitted within 24hours since the moment you received this assignment.

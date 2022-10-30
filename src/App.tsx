@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Container } from '@mui/material';
+import { QueryClientProvider } from 'react-query';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { routes } from './router/routes';
+import queryClient from './services/queryClient';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <QueryClientProvider client={queryClient}>
+        <Container sx={{ height: '100%', display: 'flex', justifyContent: 'center', pb: 5 }}>
+          <Router>
+            <Routes>
+              {routes.map((route) => (
+                <Route
+                  key={route.key}
+                  path={route.path}
+                  element={<route.component />}
+                />
+              ))}
+            </Routes>
+          </Router>
+        </Container>
+      </QueryClientProvider>
     </div>
   );
 }
